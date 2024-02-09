@@ -1,0 +1,15 @@
+[build]
+  # Commande de construction
+  command = "npm install && npm run build"
+
+  # Répertoire de construction (s'il est différent du répertoire racine)
+  publish = "dist"
+
+  # Variables d'environnement
+  environment = { 
+    NODE_VERSION = "14.x",
+    N8N_PORT = "5678" 
+  }
+
+  # Ignorer les avertissements pendant la construction
+  ignore_warnings = true
